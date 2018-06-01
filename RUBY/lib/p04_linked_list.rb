@@ -15,8 +15,8 @@ class Node
   end
 
   def remove
-    self.next.prev = @prev
-    self.prev.next = @next
+    self.next.prev = @prev unless self.next == nil
+    self.prev.next = @next unless self.prev == nil
     
     # self.val = nil 
     # self.key = nil 
@@ -119,11 +119,11 @@ class LinkedList
     nil
   end
 
-  def each
+  def each(&prc)
     node = head
     
     until node == nil
-      yield node 
+      prc.call(node)
       node = node.next
     end
     nil
