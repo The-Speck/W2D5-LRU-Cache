@@ -72,7 +72,7 @@ class HashMap
   end
 
   def bucket(key)
-  key.hash % num_buckets
+    key.hash % num_buckets
   end
   protected 
   attr_accessor :store

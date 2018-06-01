@@ -27,6 +27,7 @@ class Node
 end
 
 class LinkedList
+  include Enumerable
   attr_accessor :head, :tail, :count
   
   def initialize
@@ -35,7 +36,6 @@ class LinkedList
     @count = 0
   end
   
-  include Enumerable
   
   def [](i)
     each_with_index { |link, j| return link if i == j }
