@@ -1,3 +1,4 @@
+require 'byebug'
 require 'rspec'
 require 'p04_linked_list'
 
