@@ -1,0 +1,38 @@
+div {
+  min-width: 20px;
+  min-height: 20px;
+  padding: 50px;
+  border: 5px solid black;
+}
+
+.image-1-container {
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  background-color: wheat; 
+  float: left;
+}
+
+.image-2-container {
+  float: right;
+  width: fit-content;
+  height: fit-content;
+}
+
+#first-div {
+  background-color: #39cccc;
+}
+
+#second-div {
+  box-sizing: border-box;
+  background-color: #ff4136;
+}
+
+#children {
+  min-width: 400px;
+  min-height: 10px;
+}
+
+p {
+  background-color: #7fdbff;
+}
